@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#include <cmath>
+#include <fstream>
 #include <iomanip>
 
 int main() {
@@ -45,7 +45,7 @@ int main() {
 	// Output details for every month
 	outfile << std::setw(5) << months / 12 << std::setw(10) << months % 12 + 1
 		<< std::setw(20) << std::fixed << std::setprecision(2) << portfolio_value
-		<< std::setw(20) << monthly dividends
+		<< std::setw(20) << monthly_dividends
 		<< std::setw(25) << cumulative_dividends << std::endl;
 
 	// Move to next month
@@ -57,7 +57,7 @@ int main() {
     outfile << "Total months needed: " << months << std::endl;
     outfile << "Total time: " << months / 12 << " years and " << months % 12 << " months" << std::endl;
     outfile << "Final portfolio value: " << portfolio_value << " euros" << std::endl;
-    outfile << "Final anual dividends: " << monthly_dividends * 12 << " euros" << std:endl;
+    outfile << "Final anual dividends: " << monthly_dividends * 12 << " euros" << std::endl;
     outfile << "Cumulative dividends recieved: " << cumulative_dividends << " euros" << std::endl;
 
     // Close the file
