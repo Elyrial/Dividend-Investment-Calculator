@@ -11,7 +11,7 @@ int main() {
     double target_annual_dividends = 50250;
 
     // Stock specific values
-    double initial_dividend_yield = 0.04;			
+    double initial_dividend_yield = 0.04;
     double dividend_growth_rate = 0.03;
     double stock_growth_rate = 0.05;
 
@@ -29,9 +29,9 @@ int main() {
     std::ofstream outfile("investment_output_data.txt");
 
     // Header for output table in file
-    outfile << std::setw(5) << "Year" << std::setw(10) << "Month" 
-            << std::setw(20) << "Portfolio Value" 
-            << std::setw(20) << "Monthly Dividends" 
+    outfile << std::setw(5) << "Year" << std::setw(10) << "Month"
+            << std::setw(20) << "Portfolio Value"
+            << std::setw(20) << "Monthly Dividends"
             << std::setw(25) << "Cumulative Dividends" << std::endl;
     outfile << std::string(80, '-') << std::endl;
 
@@ -45,8 +45,8 @@ int main() {
 
         // Output details for every month
         outfile << std::setw(5) << months / 12 << std::setw(10) << months % 12 + 1
-                << std::setw(20) << std::fixed << std::setprecision(2) << portfolio_value 
-                << std::setw(20) << std::fixed << std::setprecision(2) << monthly_dividends 
+                << std::setw(20) << std::fixed << std::setprecision(2) << portfolio_value
+                << std::setw(20) << std::fixed << std::setprecision(2) << monthly_dividends
                 << std::setw(25) << std::fixed << std::setprecision(2) << cumulative_dividends << std::endl;
 
         // Move to next month
