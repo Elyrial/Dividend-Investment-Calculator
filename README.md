@@ -60,9 +60,9 @@ The file also includes a summary at the end, detailing the total time required t
    g++ -o investment_simulation investment_simulation.cpp
 
 2. **Run the Program:**
-Execute the compiled program:
-```bash
-./investment_simulation
+    Execute the compiled program:
+    ```bash
+    ./investment_simulation
 
 ## Customization
 
