@@ -59,3 +59,36 @@ The file also includes a summary at the end, detailing the total time required t
    ```bash
    g++ -o investment_simulation investment_simulation.cpp
 
+2. **Run the Program:**
+Execute the compiled program:
+```bash
+./investment_simulation
+
+## Customization
+
+To customize the simulation, adjust the following variables in the code:
+
+- `initial_investment`: Set the initial amount of money invested.
+- `monthly_investment`: Set the amount added to the investment each month.
+- `target_annual_dividends`: Define the desired annual dividend target.
+- `initial_dividend_yield`: Set the starting dividend yield percentage.
+- `dividend_growth_rate`: Set the annual dividend growth rate.
+- `stock_growth_rate`: Set the annual stock growth rate.
+
+## Dependencies
+
+This program requires a C++ compiler that supports the C++11 standard or later. The program includes the following libraries:
+
+- `<iostream>`: For input and output operations.
+- `<cmath>`: For mathematical functions like `pow`.
+- `<fstream>`: For file handling operations.
+- `<iomanip>`: For output formatting.
+
+## Output Example
+
+Upon completion, the program displays a message indicating that the results have been written to `investment_output_data.txt`. The final lines of the output file provide a summary of the simulation results, including the time taken to reach the target and the final portfolio value.
+
+## License
+
+This program is free to use and modify. No specific license is provided.
+
