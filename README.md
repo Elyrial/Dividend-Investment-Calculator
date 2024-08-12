@@ -90,5 +90,4 @@ Upon completion, the program displays a message indicating that the results have
 
 ## License
 
-This program is free to use and modify. No specific license is provided.
-
+Licensed under the GPL-3.0 License
